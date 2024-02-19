@@ -1,9 +1,10 @@
-const seats = document.querySelectorAll(".seats");
+
 const selectedSeats = [];
 const seatLimit = 4;
 const perSeatPrice = 550;
 let motPrice = 0;
 let grandTotal = 0;
+const seats = document.querySelectorAll(".seats");
 
 for (let index = 0; index < seats.length; index++) {
     const seat = seats[index];
@@ -98,7 +99,7 @@ btn.addEventListener("click", function () {
             const cuponDiv = document.getElementById('cupon-container');
             cuponDiv.classList.add('hidden');
         }
-        else if (cuponCoad === "COUPLE20") {
+        else if (cuponCoad === "Couple 20") {
             const discountElement = document.getElementById("grand-total");
             const discountAmount = motPrice * 0.2;
             const discountPrice = motPrice - discountAmount;
